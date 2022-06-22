@@ -1,12 +1,14 @@
 import React from 'react';
 
-import './index.css';
+import './not-found.css';
 
 class Notfound extends React.Component {
   
   render() {
     return (
-      <p class="text-center">not-found works!</p>
+      <div id="Notfound">
+        <p>not-found works!</p>
+      </div>
     )
   }
   

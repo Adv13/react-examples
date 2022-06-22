@@ -66,15 +66,9 @@ class App extends React.Component {
                   <NavLink className="nav-link" to="/about"><i className="far fa-question-circle me-1"></i>About</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/contact"><i className="fas fa-envelope me-1"></i>Contact</NavLink>
+                  <NavLink className="nav-link" to="/example"><i className="fas fa-envelope me-1"></i>Example</NavLink>
                 </li>
               </ul>
-              <form className="d-flex">
-                <button type="button" className="btn btn-sm nga-btn-navbar me-2"><i className="fas fa-user-plus me-2"></i>Sign
-                  up</button>
-                <button type="button" className="btn btn-sm btn-outline-light me-2"><i
-                  className="fas fa-sign-in-alt me-2"></i>Login</button>
-              </form>
             </div>
           </nav>
         </header>
