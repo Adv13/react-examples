@@ -29,13 +29,14 @@ class Example extends React.Component {
   }
 
   render() {
-    let peopleCard = this.state.people.map((person, index) => {
+    const peopleCard = this.state.people.map((person, index) => {
       return (
         <div sm="4" key={`${person.id}+${index}`}>
           <PeopleCard key={person.id} person={person} />
         </div>
       );
     });
+
     return (
       <div>
         <div>{peopleCard}</div>

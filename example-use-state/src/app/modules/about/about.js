@@ -1,10 +1,13 @@
 import React from 'react';
-import './index.css';
+
+import './about.css';
 
 class About extends React.Component {
   render() {
     return (
-      <p class="text-center">about works!</p>
+      <div className="container py-5">
+        <p className="text-center">about works!</p>
+      </div>
     )
   }
 }

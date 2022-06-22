@@ -17,13 +17,14 @@
   background-color: #09238d;
 }
 
-.nga-logo {
+.nga-navbar-logo {
   font-weight: 700;
 }
 
-.nga-logo:hover {
+.nga-navbar-logo:hover {
   color: rgba(255, 255, 255, 0.75);
 }
+
 
 .nga-btn-navbar {
   color: #fff;
@@ -35,6 +36,14 @@
   color: white;
   background-color: #0b5ed7;
   border-color: #0a58ca;
+}
+
+.nga-logo {
+  font-weight: 700;
+}
+
+.nga-logo:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .nga-footer {
@@ -60,4 +69,3 @@
 .nga-footer .hint:hover {
   opacity: 0.8;
 }
-

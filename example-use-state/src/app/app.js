@@ -1,12 +1,8 @@
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
 import AppRouting from './app-routing';
-import ganatanLogo from '../assets/params/images/logo/ganatan-logo.png';
 
 import './app.css';
 
@@ -16,21 +12,16 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.title = 'react-starter';
-    this.version = 'React version 18.0.0';
-    console.log('00000000001:constructor');
+    this.title = 'react-bootstrap';
+    this.footerUrl = 'https://www.ganatan.com';
+    this.footerLink = 'www.ganatan.com';
   }
 
   componentDidMount() {
-    console.log('00000000001:componentDidMount');
-    let navMain = document.getElementById('navbarCollapse');
-    console.log('00000000002:' + navMain);
+    const navMain = document.getElementById('navbarCollapse');
     if (navMain) {
-      console.log('00000000003:' + navMain);
-      navMain.onclick = function () {
-        console.log('00000000004:' + navMain);
+      navMain.onclick = function onClick() {
         if (navMain) {
-          console.log('00000000005:' + navMain);
           navMain.classList.remove("show");
         }
       }
@@ -38,51 +29,33 @@ class App extends React.Component {
   }
 
   render() {
-    const style = {
-      backgroundColor: 'black',
-    };
-    console.log('00000000001:render');
     return (
-      <div className="app">
-
-        <header className="navbar navbar-expand-md navbar-dark fixed-top nga-navbar">
-          <nav className="container" aria-label="Main navigation">
+      <div >
+        <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div className="container-fluid">
             <NavLink className="navbar-brand" to="/">
-              <img src={ganatanLogo} width="25" height="25" alt="Ganatan Logo" />
-              <span className="nga-logo mx-1">ganatan</span>
+              <span className="nga-logo mx-1">React</span>
             </NavLink>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
-              <ul className="navbar-nav mx-auto">
+              <ul className="navbar-nav mx-auto mb-2 mb-md-0">
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/"><i className="fas fa-home me-1"></i>Home</NavLink>
-                </li>
-              </ul>
-              <ul className="navbar-nav me-auto">
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/about"><i className="far fa-question-circle me-1"></i>About</NavLink>
+                  <NavLink className="nav-link" to="/">Home</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/example"><i className="fas fa-envelope me-1"></i>Example</NavLink>
+                  <NavLink className="nav-link" to="/about">About</NavLink>
                 </li>
               </ul>
             </div>
-          </nav>
-        </header>
+          </div>
+        </nav>
         <main>
           <AppRouting />
         </main>
-        <footer className="nga-footer">
-          <div className="py-3 text-center" style={style}>
-            <div className="container">
-              2022 :<a href="https://www.ganatan.com/"> www.ganatan.com</a>
-            </div>
-          </div>
-        </footer>
-      </div>
+      </div >
+
     )
   }
 

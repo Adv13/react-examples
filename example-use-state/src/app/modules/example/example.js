@@ -1,20 +1,6 @@
 import React from 'react';
 
-import './index.css';
-
-/* class Example extends React.Component {
-  
-  render() {
-    return (
-      <div id="example">
-        <p>example works!</p>
-      </div>
-    )
-  }
-  
-}
-export default Example;  */
-
+import './example.css';
 
 class Example extends React.Component {
   constructor(props) {
@@ -49,6 +35,5 @@ class Example extends React.Component {
     );
   }
 }
-
 
 export default Example;
