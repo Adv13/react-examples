@@ -17,14 +17,11 @@ class Home extends React.Component {
 
     return (
       <main className="container">
-        <div className="bg-light p-5">
-          <h1>Example</h1>
+        <div className="p-5">
+          <h1>Examples</h1>
           <ul>
-            <li>
-              <Link to="/example">
-                example
-              </Link>
-            </li>
+            <li><Link to="/example01">example01</Link></li>
+            <li><Link to="/example02">example02</Link></li>
           </ul>
         </div>
       </main>

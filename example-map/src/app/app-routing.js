@@ -6,7 +6,8 @@ import Notfound from './modules/not-found/not-found';
 
 const About = React.lazy(() => import('./modules/about/about'));
 
-const Example = React.lazy(() => import('./modules/example/example'));
+const Example01 = React.lazy(() => import('./modules/example01/example'));
+const Example02 = React.lazy(() => import('./modules/example02/example'));
 
 class AppRouting extends React.Component {
 
@@ -16,7 +17,8 @@ class AppRouting extends React.Component {
         <Route index element={<Home />} />
 
         <Route path="about/*" element={<Suspense fallback={<>...</>}><About /></Suspense>} />
-        <Route path="example/*" element={<Suspense fallback={<>...</>}><Example /></Suspense>} />
+        <Route path="example01/*" element={<Suspense fallback={<>...</>}><Example01 /></Suspense>} />
+        <Route path="example02/*" element={<Suspense fallback={<>...</>}><Example02 /></Suspense>} />
 
         <Route path="*" element={<Notfound />} />
 

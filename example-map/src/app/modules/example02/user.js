@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-class PeopleCard extends React.Component {
+class User extends React.Component {
   static propTypes = {
     person: PropTypes.object,
     id: PropTypes.number,
@@ -24,4 +24,4 @@ class PeopleCard extends React.Component {
   }
 }
 
-export default PeopleCard;
+export default User;
