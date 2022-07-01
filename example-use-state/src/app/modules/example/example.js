@@ -17,19 +17,18 @@ class Example extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>aaaa</h1>
-        <h1>props.name {this.props.name}</h1>
-        <h1>state.count {this.state.count}</h1>
-        <h1>state.name {this.state.name}</h1>
-        <p>Vous avez cliqué {this.state.count} fois</p>
+      <div className="p-5">
+        <p>props.name : {this.props.name}</p>
+        <p>state.count : {this.state.count}</p>
+        <p>state.name : {this.state.name}</p>
+        <p>click number : {this.state.count}</p>
         <button onClick={() => this.setState(
           {
             count: this.state.count + 1,
             name: this.props.name
           }
         )}>
-          Cliquez ici
+          Click
         </button>
       </div>
     );

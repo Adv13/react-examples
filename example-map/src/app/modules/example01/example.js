@@ -23,7 +23,7 @@ class Example01 extends React.Component {
 
     const toto = this.state.people.map((person, index) => {
       return (
-        <div sm="4" key={`${person.id}+${index}`}>
+        <div key={`${person.id}+${index}`}>
           {person.id}:{person.name}
         </div>
       );

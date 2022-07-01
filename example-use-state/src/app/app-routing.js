@@ -16,7 +16,10 @@ class AppRouting extends React.Component {
         <Route index element={<Home />} />
 
         <Route path="about/*" element={<Suspense fallback={<>...</>}><About /></Suspense>} />
-        <Route path="example/*" element={<Suspense fallback={<>...</>}><Example /></Suspense>} />
+        <Route path="example/*" element={
+          <Suspense fallback={<>...</>}>
+            <Example name="example-name" description="example-description" />
+          </Suspense>} />
 
         <Route path="*" element={<Notfound />} />
 
