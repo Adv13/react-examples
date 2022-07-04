@@ -19,10 +19,15 @@ cd angular-examples
 
 # select example
 cd example-classname
+  or
 cd example-map
+  or
 cd example-props
+  or
 cd example-react-helmet-async
+  or
 cd example-redux
+  or
 cd example-use-state
   
 
