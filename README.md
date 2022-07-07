@@ -18,6 +18,8 @@ git clone https://gitlab.com/ganatan/react-examples.git
 cd angular-examples
 
 # select example
+cd example-checkbox
+  or
 cd example-classname
   or
 cd example-map
